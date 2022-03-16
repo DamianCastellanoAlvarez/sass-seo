@@ -1,0 +1,10 @@
+se agrego las siguientes "meta"
+<meta name="description" content="web dedicada a la informacion y venta de diferentes te, hierba y otros">
+    <meta name="keywords" content="te, hierbas, hierba, azucar, stevia">
+    <meta name="organization" content="pausamarket">
+    <meta name="robot" content="index,fllow">
+    <meta name="revisit-after" content="15days">
+
+y se mejoro el meta viewport
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalables=si, minimun-scale=1.0, maximun-scale=2.0">

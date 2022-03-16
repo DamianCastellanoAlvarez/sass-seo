@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import "footer";
+@import "estructura";
+
+
+
+
+.icono-inicio li{
+    float: left;
+    list-style: none;
+    margin-bottom: 100px;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./tipografias/Roboto/Roboto-Regular.ttf);
+    color: #696E5E;
+}
+
+/*MIXIN*/
+
+@mixin size($width, $margin, $background-size, $margin-bottom) {
+    width: $width; 
+    margin: $margin;
+    background-size: $background-size;
+    margin-bottom: $margin-bottom;
+}
+
+.imagen-inicio img{
+    @include size(100%, 0 auto, cover, 100px);
+
+}
+
+
+/*productos*/
+
+/*@EXTEND*/
+
+
+.alineado{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 180px;
+}
+
+.productos-p p{
+    float: left;
+    font-size: 20px;
+    font-family: 'Roboto';
+    src: url(./tipografias/Roboto/Roboto-Regular.ttf);
+    color: #696E5E;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
+
+.contenedor-productos{
+    @extend .alineado;
+}
+
+/*MAP_GET*/
+
+$estilos: (
+    color:rgb(250, 229, 223),
+    ancho: 300px,
+    margen-iz: 50px,
+    bordes: 10px,
+    );
+
+
+.boton{
+    background-color:map-get($estilos, color);
+    width: map-get($estilos, ancho);
+    margin-left: map-get($estilos, margen-iz);
+    border-radius:map-get($estilos, bordes);
+    .boton img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
